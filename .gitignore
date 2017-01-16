@@ -1,0 +1,12 @@
+*,v
+*.swp
+*.gz
+/SocialSharePlugin.md5
+/SocialSharePlugin.sha1
+/SocialSharePlugin.tgz
+/SocialSharePlugin.zip
+/SocialSharePlugin_installer
+/SocialSharePlugin_installer.pl
+/SocialSharePlugin.txt
+pub/System/SocialSharePlugin/socialshare.js
+pub/System/SocialSharePlugin/socialshare.css

@@ -1,0 +1,15 @@
+data/System/SocialSharePlugin.txt 0644
+lib/Foswiki/Plugins/SocialSharePlugin/Config.spec 0644
+lib/Foswiki/Plugins/SocialSharePlugin/Core.pm 0644
+lib/Foswiki/Plugins/SocialSharePlugin/DEPENDENCIES 0644
+lib/Foswiki/Plugins/SocialSharePlugin.pm 0644
+pub/System/SocialSharePlugin/buffer-20.png 0644
+pub/System/SocialSharePlugin/buffer.png 0644
+pub/System/SocialSharePlugin/Makefile 0644
+pub/System/SocialSharePlugin/socialshare.css 0644
+pub/System/SocialSharePlugin/socialshare.css.gz 0644
+pub/System/SocialSharePlugin/socialshare.js 0644
+pub/System/SocialSharePlugin/socialshare.js.gz 0644
+pub/System/SocialSharePlugin/socialshare.uncompressed.css 0644
+pub/System/SocialSharePlugin/socialshare.uncompressed.js 0644
+templates/socialshare.tmpl 0644
