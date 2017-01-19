@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="micha" comment="reprev" date="1484824411" format="1.1" reprev="3" version="3"}%
+%META:TOPICINFO{author="ProjectContributor" comment="reprev" date="1484824411" format="1.1" reprev="1" version="1"}%
 ---+!! %TOPIC%
 %FORMFIELD{"Description"}%
 
@@ -130,6 +130,6 @@ For [[Foswiki:Extensions/NatSkin][NatSkin]] no extra provisions are required. Th
 %META:FIELD{name="License" title="License" value="[[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]]"}%
 %META:FIELD{name="Home" title="Home" value="Foswiki:Extensions/%25TOPIC%25"}%
 %META:FIELD{name="Support" title="Support" value="Foswiki:Support/%25TOPIC%25"}%
-%META:FILEATTACHMENT{name="SocialShareSnapshot3.png" attachment="SocialShareSnapshot3.png" attr="" comment="" date="1484824072" size="124208" user="micha" version="5"}%
-%META:FILEATTACHMENT{name="SocialShareSnapshot2.png" attachment="SocialShareSnapshot1.png" attr="t" comment="" date="1484823748" moveby="micha" movedto="System.SocialSharePlugin.SocialShareSnapshot2.png" movedwhen="1484823797" movefrom="System.SocialSharePlugin.SocialShareSnapshot1.png" size="8299" user="micha" version="2"}%
-%META:FILEATTACHMENT{name="SocialShareSnapshot1.png" attachment="SocialShareSnapshot.png" attr="" comment="" date="1484823803" moveby="micha" movedto="System.SocialSharePlugin.SocialShareSnapshot1.png" movedwhen="1484823809" movefrom="System.SocialSharePlugin.SocialShareSnapshot.png" size="23484" user="micha" version="1"}%
+%META:FILEATTACHMENT{name="SocialShareSnapshot3.png" attachment="SocialShareSnapshot3.png" attr="" comment="" date="1484824072" size="124208" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="SocialShareSnapshot2.png" attachment="SocialShareSnapshot1.png" attr="t" comment="" date="1484823748" moveby="ProjectContributor" movedto="System.SocialSharePlugin.SocialShareSnapshot2.png" movedwhen="1484823797" movefrom="System.SocialSharePlugin.SocialShareSnapshot1.png" size="8299" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="SocialShareSnapshot1.png" attachment="SocialShareSnapshot.png" attr="" comment="" date="1484823803" moveby="ProjectContributor" movedto="System.SocialSharePlugin.SocialShareSnapshot1.png" movedwhen="1484823809" movefrom="System.SocialSharePlugin.SocialShareSnapshot.png" size="23484" user="micha" version="1"}%
