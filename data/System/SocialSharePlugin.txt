@@ -1,12 +1,113 @@
-%META:TOPICINFO{author="ProjectContributor" date="1420222138" format="1.1" version="1"}%
+%META:TOPICINFO{author="micha" comment="reprev" date="1484824411" format="1.1" reprev="3" version="3"}%
 ---+!! %TOPIC%
 %FORMFIELD{"Description"}%
 
 %TOC%
 
----++ Usage
+---++ Summary
+
+This plugin allows you to render so-called social share buttons. Clicking on such a button will allow you to share content
+on other social network in oder to promote the content the social share button is on. Supported ways to share content are:
+
+   * Buffer
+   * Delicious
+   * Digg
+   * Email
+   * Facebook
+   * Google
+   * <nop>LinkedIn
+   * Pinboard
+   * Pinterest
+   * Pocket
+   * Reddit
+   * <nop>StumbleUpon
+   * Tumblr
+   * Twitter
+   * <nop>WhatsApp
+   * <nop>WordPress
+   * Xing
+
+Buttons may be rendered for each of them or a subset using the =%SOCIALSHARE= macro. Additionally this plugin supports a
+way to present a modal dialog with all social buttons on it. 
 
 ---++ Examples
+
+You type:
+
+<verbatim class="tml">
+%SOCIALSHARE{width="42em"}%
+</verbatim>
+
+You get:
+
+%IF{"context SocialSharePluginEnabled"
+   then="$percntSOCIALSHARE{width=\"42em\"}$percnt"
+   else="<img src='%ATTACHURLPATH%/SocialShareSnapshot1.png' width='588' />"
+}%
+
+You type:
+
+<verbatim class="tml">
+%SOCIALSHARE{type="icons" tooltips="on"}%
+</verbatim>
+
+You get:
+
+%IF{"context SocialSharePluginEnabled"
+   then="$percntSOCIALSHARE{type=\"icons\" tooltips=\"on\"}$percnt"
+   else="<img src='%ATTACHURLPATH%/SocialShareSnapshot2.png' width='641' />"
+}%
+
+You type:
+
+<verbatim class="tml">
+%BUTTON{"%MAKETEXT{"Share"}%" icon="fa-share-alt" class="socialShareButton"}%
+</verbatim>
+
+You get:
+
+%BUTTON{"%MAKETEXT{"Share"}%" icon="fa-share-alt" class="socialShareButton"}%
+
+... and - when %TOPIC% is installed - on click it will open a dialog (using [[%SYSTEMWEB%.JQueryBlockUI]]) displaying a list of social share buttons.
+See the below screenshot.
+
+---++ Syntax
+
+=%<nop>SOCIALSHARE{"&lt;services>" ...}%=
+
+In most cases it is sufficient to just list the services you want a social button for. The actual implementation is then predefined in the =socialshare.tmpl= template.
+However, you may still want to take over control and create the button by yourself. This will require detailed knowledge about the way social networks construct share links.
+
+| *Parameter* | *Description* | *Default* |
+| ="..."=, =services= | a list comma separated of services to render buttons for (see the list of IDs above) | all of them, or a subset as configured in =$Foswiki::cfg{SocialSharePlugin}{Services}= | 
+| =type= | | |
+| =tooltips= | boolean flag to switch on/off jQuery-ui tooltips on the buttons; if left =off= then the browser's native tooltip will still be used | off |
+| =url= | | |
+| =tags= | | |
+| =title=, =topictitle= | | |
+| =text= | | |
+| =media= | | |
+| =topic= | | |
+| =web= | | |
+| =include= | | |
+| =exclude= | | |
+| =format= | | |
+| =header= | | |
+| =footer= | | |
+| =separator= | | |
+
+---++ Skin integration
+
+For PatternSkin there is a skin overlay that will all add a "Share" button to the topic toolbox at the top right.
+Change your %LOCALSITEPREFS% by adding the =social= ID to the =SKIN= setting, for example like this:
+
+<verbatim class="tml">   * Set SKIN = social, pattern</verbatim>
+
+You might have other extra skin overlays in place already (such as =natedit=, =metacomment=, =topicinteraction=, and/or =solr=. In that case just prepend =social= to the =SKIN= setting to mix in the functionality.
+
+<img src="%ATTACHURLPATH%/SocialShareSnapshot3.png" width="800" />
+
+For [[Foswiki:Extensions/NatSkin][NatSkin]] no extra provisions are required. The "Share" feature is already integrated into the "More" menu.
 
 ---++ Installation Instructions
 
@@ -16,15 +117,19 @@
 %$DEPENDENCIES%
 
 ---++ Change History
-| | |
+%TABLE{columnwidths="7em" tablewidth="100%"}%
+| 19 Jan 2017 | initial public release |
 
 %META:FORM{name="PackageForm"}%
 %META:FIELD{name="Author" title="Author" value="Michael Daum"}%
-%META:FIELD{name="Copyright" title="Copyright" value="&copy; 2015 Michael Daum http://michaeldaumconsulting.com"}%
+%META:FIELD{name="Version" title="Version" value="%25$VERSION%25"}%
+%META:FIELD{name="Release" title="Release" value="%25$RELEASE%25"}%
 %META:FIELD{name="Description" title="Description" value="%25$SHORTDESCRIPTION%25"}%
-%META:FIELD{name="Home" title="Home" value="Foswiki:Extensions/%TOPIC%"}%
+%META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/%25TOPIC%25"}%
+%META:FIELD{name="Copyright" title="Copyright" value="&copy; 2015-2017 Michael Daum http://michaeldaumconsulting.com"}%
 %META:FIELD{name="License" title="License" value="[[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]]"}%
-%META:FIELD{name="Release" title="Release" value="%$RELEASE%"}%
-%META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/%TOPIC%"}%
-%META:FIELD{name="Support" title="Support" value="Foswiki:Support/%TOPIC%"}%
-%META:FIELD{name="Version" title="Version" value="%$VERSION%"}%
+%META:FIELD{name="Home" title="Home" value="Foswiki:Extensions/%25TOPIC%25"}%
+%META:FIELD{name="Support" title="Support" value="Foswiki:Support/%25TOPIC%25"}%
+%META:FILEATTACHMENT{name="SocialShareSnapshot3.png" attachment="SocialShareSnapshot3.png" attr="" comment="" date="1484824072" size="124208" user="micha" version="5"}%
+%META:FILEATTACHMENT{name="SocialShareSnapshot2.png" attachment="SocialShareSnapshot1.png" attr="t" comment="" date="1484823748" moveby="micha" movedto="System.SocialSharePlugin.SocialShareSnapshot2.png" movedwhen="1484823797" movefrom="System.SocialSharePlugin.SocialShareSnapshot1.png" size="8299" user="micha" version="2"}%
+%META:FILEATTACHMENT{name="SocialShareSnapshot1.png" attachment="SocialShareSnapshot.png" attr="" comment="" date="1484823803" moveby="micha" movedto="System.SocialSharePlugin.SocialShareSnapshot1.png" movedwhen="1484823809" movefrom="System.SocialSharePlugin.SocialShareSnapshot.png" size="23484" user="micha" version="1"}%

@@ -1,6 +1,6 @@
 # Plugin for Foswiki - The Free and Open Source Wiki, http://foswiki.org/
 #
-# SocialSharePlugin is Copyright (C) 2015-2016 Michael Daum http://michaeldaumconsulting.com
+# SocialSharePlugin is Copyright (C) 2015-2017 Michael Daum http://michaeldaumconsulting.com
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -69,6 +69,8 @@ sub SOCIALSHARE {
   my $text = $params->{text} || $title;
   my $media = $params->{media} || '';
   my $type = $params->{type} || 'default';
+  my $width = $params->{width} || 'auto';
+  my $doTooltips = Foswiki::Func::isTrue($params->{tooltips}, 0);
 
   $topic = $params->{topic} if defined $params->{topic};
   $web = $params->{web} if defined $params->{web};
@@ -130,11 +132,21 @@ sub SOCIALSHARE {
 
   my $result= $header.join($sep, @result).$footer;
 
-  my $class = "";
-  $class = "socialShare_".$type unless $type eq 'default';
+  my @class = ();
+  my $data = "";
+  push @class, "socialShare_".$type unless $type eq 'default';
+  if ($doTooltips) {
+    push @class, "jqUITooltip";
+    $data = 'data-theme="info" data-position="top" data-arrow="true" data-delay="0" data-track="false"'
+  } else {
+    $result =~ s/ title="%MAKETEXT\{.*?\}%"/ /g;
+  }
+  my $class = join(" ", @class);
   $result =~ s/\$class/$class/g;
   $result =~ s/\$web/$web/g;
   $result =~ s/\$topic/$topic/g;
+  $result =~ s/\$width/$width/g;
+  $result =~ s/\$data/$data/g;
 
   return $result;
 }

@@ -1,6 +1,6 @@
 # Plugin for Foswiki - The Free and Open Source Wiki, http://foswiki.org/
 #
-# SocialSharePlugin is Copyright (C) 2015-2016 Michael Daum http://michaeldaumconsulting.com
+# SocialSharePlugin is Copyright (C) 2015-2017 Michael Daum http://michaeldaumconsulting.com
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -21,8 +21,8 @@ use warnings;
 use Foswiki::Func ();
 use Foswiki::Plugins ();
 
-our $VERSION = '0.01';
-our $RELEASE = '15 Sep 2016';
+our $VERSION = '1.00';
+our $RELEASE = '16 Jan 2017';
 our $SHORTDESCRIPTION = 'Social Share Buttons';
 our $NO_PREFS_IN_TOPIC = 1;
 our $core;

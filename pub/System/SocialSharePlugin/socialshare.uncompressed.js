@@ -32,5 +32,7 @@ jQuery(function($) {
         throw("ERROR: can't load dialog xhr=",xhr);
       }
     }); 
+
+    return false;
   });
 });

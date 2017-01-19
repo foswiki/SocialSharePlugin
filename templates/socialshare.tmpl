@@ -1,10 +1,10 @@
-%TMPL:DEF{"socialshare::header"}%<div class='socialShare $class clearfix'>%TMPL:END%
+%TMPL:DEF{"socialshare::header"}%<div class="socialShare $class clearfix" style="width:$width" $data>%TMPL:END%
 %TMPL:DEF{"socialshare::footer"}%</div>%TMPL:END%
 %TMPL:DEF{"socialshare::topictitle"}%%WIKITOOLNAME%: %GETTOPICTITLE{topic="$web.$topic"}%%TMPL:END%
 
 %TMPL:DEF{"socialshare::facebook"}%<a class="$service" $style href="http://www.facebook.com/sharer.php?u=%ENCODE{"$url"}%&t=%ENCODE{"$title"}%" target="_blank" rel="noopener noreferrer" title="%MAKETEXT{"share on [_1]" args="$service"}%">%JQICON{"fa-facebook"}%$label</a>%TMPL:END%
 
-%TMPL:DEF{"socialshare::twitter"}%<a class="$service" $style href="http://twitter.com/share?url=%ENCODE{"$url"}%&text=%ENCODE{"$text"}%&hashtags=%ENCODE{"$tags"}%" target="_blank" rel="noopener noreferrer" title="%MAKTEXT{"tweet this"}%">%JQICON{"fa-twitter"}%$label</a>%TMPL:END%
+%TMPL:DEF{"socialshare::twitter"}%<a class="$service" $style href="http://twitter.com/share?url=%ENCODE{"$url"}%&text=%ENCODE{"$text"}%&hashtags=%ENCODE{"$tags"}%" target="_blank" rel="noopener noreferrer" title="%MAKETEXT{"tweet this"}%">%JQICON{"fa-twitter"}%$label</a>%TMPL:END%
 
 %TMPL:DEF{"socialshare::google"}%<a class="$service" $style href="https://plus.google.com/share?url=%ENCODE{"$url"}%" target="_blank" rel="noopener noreferrer" title="%MAKETEXT{"share on [_1]" args="$service"}%">%JQICON{"fa-google-plus"}%$label</a>%TMPL:END%
 
@@ -22,7 +22,7 @@
 
 %TMPL:DEF{"socialshare::email"}%<a class="$service" $style href="mailto:?Subject=%ENCODE{"$title"}%&Body=%ENCODE{"$url"}%" title="%MAKETEXT{"send email"}%">%JQICON{"fa-inbox"}%$label</a>%TMPL:END%
 
-%TMPL:DEF{"socialshare::buffer"}%<a class="$service" $style href="https://bufferapp.com/add?count=horizontal&via=&text=%ENCODE{"$text"}%&picture=%ENCODE{"$media"}%&url=%ENCODE{"$url"}%&source=button" target="_blank" rel="noopener noreferrer" title="%MAKETEXT{"submit to [_1]" args="$service"}%"><img src='%PUBURLPATH%/%SYSTEMWEB%/SocialSharePlugin/buffer-20.png' />$label</a>%TMPL:END%
+%TMPL:DEF{"socialshare::buffer"}%<a class="$service" $style href="https://bufferapp.com/add?count=horizontal&via=&text=%ENCODE{"$text"}%&picture=%ENCODE{"$media"}%&url=%ENCODE{"$url"}%&source=button" target="_blank" rel="noopener noreferrer" title="%MAKETEXT{"submit to [_1]" args="$service"}%"><img src="%PUBURLPATH%/%SYSTEMWEB%/SocialSharePlugin/buffer-20.png" />$label</a>%TMPL:END%
 
 %TMPL:DEF{"socialshare::delicious"}%<a class="$service" $style href="http://del.icio.us/post?url=%ENCODE{"$url"}%&title=%ENCODE{"$title"}%" target="_blank" rel="noopener noreferrer" title="%MAKETEXT{"submit to [_1]" args="$service"}%">%JQICON{"fa-delicious"}%$label</a>%TMPL:END%
 

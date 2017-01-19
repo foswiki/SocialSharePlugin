@@ -3,12 +3,15 @@
   box-sizing:border-box;
 }
 .socialShare a {
-  display:inline-block;
-  min-width:140px;
-  padding:5px 10px;
+  display:block;
+  float:left;
+  min-width:10.5em;
+  padding:0.25px 0.5em;
   white-space:nowrap;
+  line-height:2.5em;
 }
 .socialShare a,
+.socialShare a:visited,
 .socialShare a:hover {
   color:#fff;
   text-decoration:none;
@@ -21,9 +24,11 @@
 .socialShare a img,
 .socialShare a .fa {
   font-size:20px;
-  padding:5px;
-  margin-right:5px;
+  padding:0.25em;
+  margin-right:0.5em;
   vertical-align:middle;
+  width:1.3em;
+  text-align:center;
 }
 
 .socialShare_icons a {
@@ -32,6 +37,7 @@
 .socialShare_icons a img,
 .socialShare_icons a .fa {
   margin:0;
+  width:1.3em;
 }
 
 /* see http://brandcolors.net/ */
