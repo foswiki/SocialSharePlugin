@@ -1,6 +1,6 @@
 # Plugin for Foswiki - The Free and Open Source Wiki, http://foswiki.org/
 #
-# SocialSharePlugin is Copyright (C) 2015-2017 Michael Daum http://michaeldaumconsulting.com
+# SocialSharePlugin is Copyright (C) 2015-2019 Michael Daum http://michaeldaumconsulting.com
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -160,13 +160,13 @@ sub addAssets {
   Foswiki::Plugins::JQueryPlugin::createPlugin("blockUI");
 
   my $css = <<'HERE';
-<link rel='stylesheet' href='%PUBURLPATH%/%SYSTEMWEB%/SocialSharePlugin/socialshare.css' media='all' />
+<link rel='stylesheet' href='%PUBURLPATH%/%SYSTEMWEB%/SocialSharePlugin/styles.css' media='all' />
 HERE
 
   Foswiki::Func::addToZone("head", "SOCIALSHARE", $css);
 
   my $js = <<'HERE';
-<script type='text/javascript' src='%PUBURLPATH%/%SYSTEMWEB%/SocialSharePlugin/socialshare.js'></script>
+<script type='text/javascript' src='%PUBURLPATH%/%SYSTEMWEB%/SocialSharePlugin/script.js'></script>
 HERE
 
   Foswiki::Func::addToZone("script", "SOCIALSHARE", $js, "JQUERYPLUGIN::BLOCKUI");

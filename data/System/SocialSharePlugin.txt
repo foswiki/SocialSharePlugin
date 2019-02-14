@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="ProjectContributor" comment="reprev" date="1484824411" format="1.1" reprev="1" version="1"}%
+%META:TOPICINFO{author="ProjectContributor" comment="" date="1550147745" format="1.1"  version="1"}%
 ---+!! %TOPIC%
 %FORMFIELD{"Description"}%
 
@@ -118,7 +118,8 @@ For [[Foswiki:Extensions/NatSkin][NatSkin]] no extra provisions are required. Th
 
 ---++ Change History
 %TABLE{columnwidths="7em" tablewidth="100%"}%
-| 19 Jan 2017 | initial public release |
+|  14 Feb 2019 | disabled google+, enabled whatsapp, renamed css and js files not to be blocked by fanboy |
+|  19 Jan 2017 | initial public release |
 
 %META:FORM{name="PackageForm"}%
 %META:FIELD{name="Author" title="Author" value="Michael Daum"}%
@@ -126,10 +127,10 @@ For [[Foswiki:Extensions/NatSkin][NatSkin]] no extra provisions are required. Th
 %META:FIELD{name="Release" title="Release" value="%25$RELEASE%25"}%
 %META:FIELD{name="Description" title="Description" value="%25$SHORTDESCRIPTION%25"}%
 %META:FIELD{name="Repository" title="Repository" value="https://github.com/foswiki/%25TOPIC%25"}%
-%META:FIELD{name="Copyright" title="Copyright" value="&copy; 2015-2017 Michael Daum http://michaeldaumconsulting.com"}%
+%META:FIELD{name="Copyright" title="Copyright" value="&copy; 2015-2019 Michael Daum http://michaeldaumconsulting.com"}%
 %META:FIELD{name="License" title="License" value="[[http://www.gnu.org/licenses/gpl.html][GPL (Gnu General Public License)]]"}%
 %META:FIELD{name="Home" title="Home" value="Foswiki:Extensions/%25TOPIC%25"}%
 %META:FIELD{name="Support" title="Support" value="Foswiki:Support/%25TOPIC%25"}%
-%META:FILEATTACHMENT{name="SocialShareSnapshot3.png" attachment="SocialShareSnapshot3.png" attr="" comment="" date="1484824072" size="124208" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="SocialShareSnapshot2.png" attachment="SocialShareSnapshot1.png" attr="t" comment="" date="1484823748" moveby="ProjectContributor" movedto="System.SocialSharePlugin.SocialShareSnapshot2.png" movedwhen="1484823797" movefrom="System.SocialSharePlugin.SocialShareSnapshot1.png" size="8299" user="ProjectContributor" version="1"}%
-%META:FILEATTACHMENT{name="SocialShareSnapshot1.png" attachment="SocialShareSnapshot.png" attr="" comment="" date="1484823803" moveby="ProjectContributor" movedto="System.SocialSharePlugin.SocialShareSnapshot1.png" movedwhen="1484823809" movefrom="System.SocialSharePlugin.SocialShareSnapshot.png" size="23484" user="micha" version="1"}%
+%META:FILEATTACHMENT{name="SocialShareSnapshot3.png" attachment="SocialShareSnapshot3.png" attr="" comment="" date="1550147745" size="124208" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="SocialShareSnapshot2.png" attachment="SocialShareSnapshot1.png" attr="t" comment="" date="1550147745" moveby="ProjectContributor" movedto="System.SocialSharePlugin.SocialShareSnapshot2.png" movedwhen="1484823797" movefrom="System.SocialSharePlugin.SocialShareSnapshot1.png" size="8299" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="SocialShareSnapshot1.png" attachment="SocialShareSnapshot.png" attr="" comment="" date="1550147745" moveby="ProjectContributor" movedto="System.SocialSharePlugin.SocialShareSnapshot1.png" movedwhen="1484823809" movefrom="System.SocialSharePlugin.SocialShareSnapshot.png" size="23484" user="ProjectContributor" version="1"}%

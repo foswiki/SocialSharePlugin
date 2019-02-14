@@ -3,12 +3,11 @@
   box-sizing:border-box;
 }
 .socialShare a {
-  display:block;
+  display:inline-block;
+  align-items:center;
   float:left;
   min-width:10.5em;
-  padding:0.25px 0.5em;
-  white-space:nowrap;
-  line-height:2.5em;
+  padding:0.6em 0.5em 0.6em 1em;
 }
 .socialShare a,
 .socialShare a:visited,
@@ -24,10 +23,10 @@
 .socialShare a img,
 .socialShare a .fa {
   font-size:20px;
+  line-height:1;
   padding:0.25em;
   margin-right:0.5em;
   vertical-align:middle;
-  width:1.3em;
   text-align:center;
 }
 
@@ -66,12 +65,13 @@
   padding:0;
   box-shadow:1px 1px 7px rgba(0, 0, 0, 0.2);
   border-radius:7px;
-  width:444px;
+  width:auto;
   left:50%;
   margin-left:-222px;
 }
 .blockUI.socialShareDialog .socialShare a {
-  width:148px;
+  width:165px;
+  height:47px;
   margin:0;
   min-width:auto;
 }

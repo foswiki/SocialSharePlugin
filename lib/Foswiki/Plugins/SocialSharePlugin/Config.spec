@@ -18,7 +18,7 @@ $Foswiki::cfg{SocialSharePlugin}{Services}{Email} = 1;
 $Foswiki::cfg{SocialSharePlugin}{Services}{Facebook} = 1;
 
 # **BOOLEAN**
-$Foswiki::cfg{SocialSharePlugin}{Services}{Google} = 1;
+$Foswiki::cfg{SocialSharePlugin}{Services}{Google} = 0;
 
 # **BOOLEAN**
 $Foswiki::cfg{SocialSharePlugin}{Services}{LinkedIn} = 1;
@@ -45,7 +45,7 @@ $Foswiki::cfg{SocialSharePlugin}{Services}{Tumblr} = 1;
 $Foswiki::cfg{SocialSharePlugin}{Services}{Twitter} = 1;
 
 # **BOOLEAN**
-$Foswiki::cfg{SocialSharePlugin}{Services}{WhatsApp} = 0;
+$Foswiki::cfg{SocialSharePlugin}{Services}{WhatsApp} = 1;
 
 # **BOOLEAN**
 $Foswiki::cfg{SocialSharePlugin}{Services}{WordPress} = 1;

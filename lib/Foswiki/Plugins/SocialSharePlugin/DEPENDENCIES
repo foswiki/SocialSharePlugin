@@ -1,1 +1,2 @@
+Foswiki::Plugins::BrowserDetectPlugin,>=2.00,perl,Optional
 Foswiki::Plugins::RenderPlugin,>=4.00,perl,Required

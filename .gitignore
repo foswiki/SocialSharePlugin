@@ -9,5 +9,5 @@ igp_*
 /SocialSharePlugin_installer
 /SocialSharePlugin_installer.pl
 /SocialSharePlugin.txt
-pub/System/SocialSharePlugin/socialshare.js
-pub/System/SocialSharePlugin/socialshare.css
+pub/System/SocialSharePlugin/script.js
+pub/System/SocialSharePlugin/styles.css
